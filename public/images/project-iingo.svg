@@ -1,0 +1,13 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1100" fill="#CDC6BE"/>
+  <rect x="101" y="90" width="1398" height="920" stroke="#1D1D1B" stroke-width="3"/>
+  <path d="M102 300H1498M102 802H1498" stroke="#1D1D1B" stroke-width="2"/>
+  <path d="M440 90V1010M1160 90V1010" stroke="#1D1D1B" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="800" cy="550" r="216" fill="#1D1D1B"/>
+  <circle cx="800" cy="550" r="170" stroke="#E2DEDB" stroke-width="2"/>
+  <path d="M662 550C713 444 887 444 938 550C887 656 713 656 662 550Z" stroke="#E2DEDB" stroke-width="4"/>
+  <circle cx="800" cy="550" r="48" fill="#C03F13"/>
+  <text x="138" y="218" fill="#1D1D1B" font-family="Georgia, serif" font-size="32" letter-spacing="5">COMMUNITY / WALLET / TOKEN</text>
+  <text x="800" y="929" text-anchor="middle" fill="#1D1D1B" font-family="Georgia, serif" font-size="120" font-weight="700" letter-spacing="-6">IINGO</text>
+  <text x="1395" y="218" text-anchor="end" fill="#C03F13" font-family="Georgia, serif" font-size="30" font-weight="700">02</text>
+</svg>

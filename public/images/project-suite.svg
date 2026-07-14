@@ -1,0 +1,18 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1100" fill="#1D1D1B"/>
+  <g stroke="#E2DEDB" stroke-width="2">
+    <rect x="142" y="142" width="500" height="360"/>
+    <rect x="958" y="142" width="500" height="360"/>
+    <rect x="550" y="598" width="500" height="360"/>
+    <path d="M642 322H958M1208 502V598M800 502V598" stroke-dasharray="12 12"/>
+  </g>
+  <g fill="#C03F13">
+    <circle cx="392" cy="322" r="58"/>
+    <circle cx="1208" cy="322" r="58"/>
+    <circle cx="800" cy="778" r="58"/>
+  </g>
+  <text x="392" y="333" text-anchor="middle" fill="#E2DEDB" font-family="Georgia, serif" font-size="30">UI</text>
+  <text x="1208" y="333" text-anchor="middle" fill="#E2DEDB" font-family="Georgia, serif" font-size="30">API</text>
+  <text x="800" y="789" text-anchor="middle" fill="#E2DEDB" font-family="Georgia, serif" font-size="30">EVM</text>
+  <text x="141" y="1032" fill="#E2DEDB" font-family="Georgia, serif" font-size="35" letter-spacing="6">APPLICATION SUITE / 2024—2025</text>
+</svg>

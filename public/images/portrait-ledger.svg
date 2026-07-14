@@ -1,0 +1,37 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" fill="#1D1D1B"/>
+  <g opacity="0.14" stroke="#E2DEDB">
+    <path d="M0 100H900M0 200H900M0 300H900M0 400H900M0 500H900M0 600H900M0 700H900M0 800H900M0 900H900M0 1000H900"/>
+    <path d="M100 0V1100M200 0V1100M300 0V1100M400 0V1100M500 0V1100M600 0V1100M700 0V1100M800 0V1100"/>
+  </g>
+  <rect x="54" y="54" width="792" height="992" stroke="#E2DEDB" stroke-opacity="0.32"/>
+  <path d="M54 176H846M54 902H846" stroke="#E2DEDB" stroke-opacity="0.32"/>
+  <text x="78" y="112" fill="#E2DEDB" font-family="Georgia, serif" font-size="18" letter-spacing="4">PORTRAIT REGISTER / SUBJECT 01</text>
+  <text x="821" y="112" text-anchor="end" fill="#C03F13" font-family="Georgia, serif" font-size="18" font-weight="700">MMXXVI</text>
+
+  <g transform="translate(0 28)">
+    <path d="M240 948C253 766 306 657 450 657C594 657 647 766 660 948H240Z" fill="#E2DEDB"/>
+    <path d="M270 948C291 786 343 704 450 704C557 704 609 786 630 948" fill="#CDC6BE"/>
+    <path d="M352 682L450 770L548 682" stroke="#1D1D1B" stroke-width="18" stroke-linejoin="round"/>
+    <path d="M421 747L450 770L479 747V948H421V747Z" fill="#C03F13"/>
+    <rect x="388" y="548" width="124" height="154" rx="48" fill="#CDC6BE"/>
+    <ellipse cx="450" cy="412" rx="184" ry="224" fill="#E2DEDB"/>
+    <path d="M274 395C278 226 370 164 469 174C585 186 641 285 622 414C590 341 536 290 441 285C366 281 315 322 274 395Z" fill="#1D1D1B"/>
+    <path d="M290 355C331 261 400 224 480 233C553 241 602 286 624 361" stroke="#CDC6BE" stroke-width="14"/>
+    <path d="M332 420H410M494 420H568" stroke="#1D1D1B" stroke-width="12" stroke-linecap="round"/>
+    <path d="M450 423L432 499H475" stroke="#1D1D1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M389 548C425 574 475 574 511 548" stroke="#1D1D1B" stroke-width="9" stroke-linecap="round"/>
+    <path d="M322 485C337 582 386 631 450 631C514 631 563 582 578 485" stroke="#CDC6BE" stroke-width="6" stroke-dasharray="8 11"/>
+  </g>
+
+  <circle cx="700" cy="238" r="104" fill="#C03F13"/>
+  <circle cx="700" cy="238" r="88" stroke="#F3EEE8" stroke-opacity="0.55"/>
+  <circle cx="700" cy="238" r="76" stroke="#F3EEE8" stroke-opacity="0.34" stroke-dasharray="4 7"/>
+  <text x="700" y="257" text-anchor="middle" fill="#F3EEE8" font-family="Georgia, serif" font-size="50" font-weight="700">MS</text>
+
+  <path d="M104 844H196M704 844H796" stroke="#C03F13" stroke-width="3"/>
+  <circle cx="104" cy="844" r="5" fill="#C03F13"/>
+  <circle cx="796" cy="844" r="5" fill="#C03F13"/>
+  <text x="78" y="972" fill="#E2DEDB" font-family="Georgia, serif" font-size="23" letter-spacing="5">FULL STACK BLOCKCHAIN DEVELOPER</text>
+  <text x="78" y="1014" fill="#E2DEDB" fill-opacity="0.62" font-family="Georgia, serif" font-size="17" letter-spacing="3">SOLIDITY / PRODUCT ENGINEERING / EVM</text>
+</svg>

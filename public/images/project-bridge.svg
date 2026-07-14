@@ -1,0 +1,17 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1100" fill="#E2DEDB"/>
+  <g stroke="#1D1D1B" stroke-width="3">
+    <circle cx="398" cy="550" r="250"/>
+    <circle cx="1202" cy="550" r="250"/>
+    <circle cx="398" cy="550" r="172" stroke-opacity="0.3"/>
+    <circle cx="1202" cy="550" r="172" stroke-opacity="0.3"/>
+  </g>
+  <path d="M555 447C705 329 895 329 1045 447" stroke="#C03F13" stroke-width="26"/>
+  <path d="M1045 653C895 771 705 771 555 653" stroke="#1D1D1B" stroke-width="26"/>
+  <path d="M1016 399L1069 443L1014 484" fill="#C03F13"/>
+  <path d="M584 701L531 657L586 616" fill="#1D1D1B"/>
+  <text x="398" y="576" text-anchor="middle" fill="#1D1D1B" font-family="Georgia, serif" font-size="70" font-weight="700">ETH</text>
+  <text x="1202" y="576" text-anchor="middle" fill="#1D1D1B" font-family="Georgia, serif" font-size="70" font-weight="700">POLY</text>
+  <text x="98" y="145" fill="#1D1D1B" font-family="Georgia, serif" font-size="32" letter-spacing="4">CROSS—CHAIN TRANSFER RECORD</text>
+  <text x="1498" y="1002" text-anchor="end" fill="#1D1D1B" font-family="Georgia, serif" font-size="28" letter-spacing="5">SOURCE / BRIDGE / DESTINATION</text>
+</svg>
