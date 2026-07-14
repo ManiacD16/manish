@@ -247,16 +247,28 @@ select {
 
 .word-mask {
   display: inline-block;
-  max-width: 100%;
   overflow: hidden;
   vertical-align: bottom;
-  padding-bottom: 0.06em;
-  margin-bottom: -0.06em;
+
+  /* Prevent serif ascenders, descenders, and side overhangs from clipping */
+  padding: 0.12em 0.075em 0.15em;
+
+  /* Neutralize the added padding so layout spacing remains consistent */
+  margin-top: -0.12em;
+  margin-bottom: -0.15em;
+  margin-left: -0.075em;
+}
+
+.word-mask:not(:last-child) {
+  margin-right: 0.22em;
 }
 
 .word-mask > span {
   display: inline-block;
+  transform-origin: bottom center;
   will-change: transform;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
 }
 
 .marquee-shell {
@@ -485,4 +497,44 @@ html[data-loading="true"] {
 
 .js .route-curtain {
   display: block !important;
+}
+
+.contact-select {
+  color: rgb(var(--foreground));
+  background-color: transparent;
+  color-scheme: light;
+}
+
+html.dark .contact-select {
+  color-scheme: dark;
+}
+
+.contact-select option {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-editorial);
+  font-size: 1rem;
+}
+
+.contact-select option:disabled {
+  color: rgb(var(--muted));
+}
+
+.contact-select option:checked {
+  background-color: rgb(var(--accent));
+  color: rgb(var(--paper));
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: rgb(var(--foreground));
+  caret-color: rgb(var(--foreground));
+  -webkit-box-shadow:
+    0 0 0 1000px rgb(var(--surface)) inset;
+  box-shadow:
+    0 0 0 1000px rgb(var(--surface)) inset;
+  transition: background-color 9999s ease-out;
 }

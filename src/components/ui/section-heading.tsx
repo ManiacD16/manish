@@ -18,13 +18,27 @@ export function SectionHeading({
         <span className="font-display text-4xl leading-none text-accent transition-transform duration-700 ease-editorial group-hover:translate-x-1">{index}</span>
         <span className="max-w-[8rem] pt-1.5 leading-[1.35]">{eyebrow}</span>
       </div>
-      <TextReveal
-        text={title}
-        as="h2"
-        className="relative z-10 max-w-6xl font-display text-[clamp(3.4rem,8.8vw,9.5rem)] uppercase leading-[0.73] tracking-[-0.067em]"
-      />
+     <TextReveal
+  text={title}
+  as="h2"
+  className="
+    relative
+    z-10
+    min-w-0
+    max-w-full
+    pr-[0.1em]
+    font-display
+    text-[clamp(3.2rem,8.1vw,8.75rem)]
+    font-normal
+    uppercase
+    leading-[0.79]
+    tracking-[-0.025em]
+    [font-synthesis:none]
+    [text-rendering:geometricPrecision]
+  "
+/>
       <span className="pointer-events-none absolute inset-x-0 bottom-0 h-[2px] origin-left scale-x-0 bg-accent transition-transform duration-1000 ease-editorial group-hover:scale-x-100" />
-      <span className="pointer-events-none absolute -right-4 -top-10 font-display text-[9rem] leading-none text-foreground/[0.025] sm:text-[13rem]">{index}</span>
+      <span className="pointer-events-none absolute -right-0 -top-10 font-display text-[9rem] leading-none text-foreground/[0.025] sm:text-[13rem]">{index}</span>
     </div>
   );
 }

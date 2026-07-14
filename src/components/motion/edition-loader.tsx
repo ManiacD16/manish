@@ -58,14 +58,45 @@ export function EditionLoader() {
               <span>Edition MMXXVI</span>
             </div>
 
-            <div className="relative py-10">
+            <div className="relative flex min-h-[clamp(12rem,32vw,26rem)] flex-col justify-center py-8 sm:py-10">
               <motion.div
-                initial={{ clipPath: "inset(0 100% 0 0)" }}
-                animate={{ clipPath: "inset(0 0% 0 0)" }}
-                transition={{ duration: 0.92, ease: [0.76, 0, 0.24, 1] }}
-                className="font-display text-[clamp(7rem,28vw,25rem)] uppercase leading-[0.58] tracking-[-0.09em]"
+                initial={{
+                  clipPath: "inset(-20% 100% -20% 0)",
+                  opacity: 0,
+                  x: -24,
+                }}
+                animate={{
+                  clipPath: "inset(-20% 0% -20% 0)",
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{
+                  clipPath: {
+                    duration: 0.92,
+                    ease: [0.76, 0, 0.24, 1],
+                  },
+                  opacity: {
+                    duration: 0.3,
+                  },
+                  x: {
+                    duration: 0.92,
+                    ease: [0.76, 0, 0.24, 1],
+                  },
+                }}
+                className="
+    max-w-full
+    whitespace-nowrap
+    py-[0.1em]
+    font-display
+    text-[clamp(6rem,26vw,23rem)]
+    font-normal
+    uppercase
+    leading-[0.82]
+    tracking-[-0.075em]
+    [font-synthesis:none]
+  "
               >
-                M/S
+                M / S
               </motion.div>
               <motion.div
                 initial={{ scaleX: 0 }}

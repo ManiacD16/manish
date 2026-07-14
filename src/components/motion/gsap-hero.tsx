@@ -18,7 +18,7 @@ export function GsapHero({ words }: { words: string[] }) {
     const timeline = gsap.timeline({ defaults: { ease: "power4.out" } });
     timeline
       .from("[data-hero-rule]", { scaleX: 0, transformOrigin: "left", duration: 0.8 })
-      .from("[data-hero-char]", { yPercent: 118, rotate: 2.2, stagger: 0.017, duration: 1.08 }, "-=0.28")
+      .from("[data-hero-char]", { yPercent: 110, rotate: 1.5, stagger: 0.017, duration: 1.08, }, "-=0.28")
       .from("[data-hero-meta]", { opacity: 0, y: 14, stagger: 0.065, duration: 0.58 }, "-=0.58")
       .from("[data-hero-stamp]", { opacity: 0, scale: 1.45, rotate: -22, duration: 0.78 }, "-=0.48")
       .from("[data-hero-orbit]", { opacity: 0, scale: 0.72, rotate: -18, stagger: 0.06, duration: 0.9 }, "-=0.68")
@@ -71,17 +71,47 @@ export function GsapHero({ words }: { words: string[] }) {
         Portfolio / Noida / India / MMXXVI
       </div>
 
-      <h1 className="relative z-10">
+      <h1 className="relative z-10 overflow-visible">
         <span className="sr-only">{words.join(" ")}</span>
+
         {words.map((word, rowIndex) => (
-          <span key={word} className="block overflow-hidden">
+          <span
+            key={word}
+            className="block min-w-0 max-w-full overflow-hidden"
+          >
             <span
               data-hero-row={rowIndex}
-              className={`whitespace-nowrap font-display text-[25vw] uppercase leading-[0.64] tracking-[-0.083em] sm:text-[19vw] lg:text-[16.5rem] xl:text-[20.6rem] ${rowIndex === 1 ? "ml-[4vw]" : ""}`}
+              className={`
+          block
+          w-max
+          whitespace-nowrap
+          py-[0.09em]
+          font-display
+          text-[25vw]
+          font-normal
+          uppercase
+          leading-[0.72]
+          tracking-[-0.035em]
+          [font-synthesis:none]
+          [text-rendering:geometricPrecision]
+          sm:text-[19vw]
+          lg:text-[16.5rem]
+          xl:text-[20.6rem]
+          ${rowIndex === 1 ? "mt-[0.009em] ml-[4vw]" : ""}
+        `}
             >
               {word.split("").map((character, characterIndex) => (
-                <span key={`${character}-${characterIndex}`} className="inline-block overflow-hidden align-bottom" aria-hidden="true">
-                  <span data-hero-char className="inline-block">{character}</span>
+                <span
+                  key={`${character}-${characterIndex}`}
+                  className="inline-block align-bottom"
+                  aria-hidden="true"
+                >
+                  <span
+                    data-hero-char
+                    className="inline-block origin-bottom will-change-transform"
+                  >
+                    {character === " " ? "\u00A0" : character}
+                  </span>
                 </span>
               ))}
             </span>
@@ -104,7 +134,7 @@ export function GsapHero({ words }: { words: string[] }) {
 
       <div
         data-hero-stamp
-        className="hero-seal absolute right-[6%] top-[14%] z-20 grid aspect-square w-20 rotate-6 place-items-center rounded-full border border-accent bg-[#aa330d] text-center font-editorial text-[9px] font-semibold uppercase leading-tight tracking-[0.12em] text-[#f7f3ef] sm:w-28 sm:text-[10px] lg:w-36"
+        className="hero-seal absolute right-[2%] top-[18%] z-20 grid aspect-square w-20 rotate-6 place-items-center rounded-full border border-accent bg-[#aa330d] text-center font-editorial text-[9px] font-semibold uppercase leading-tight tracking-[0.12em] text-[#f7f3ef] sm:w-28 sm:text-[10px] lg:w-36"
       >
         <span className="absolute inset-[6px] rounded-full border border-[#f7f3ef]/45" />
         <span className="absolute inset-[12px] rounded-full border border-dashed border-[#f7f3ef]/30" />

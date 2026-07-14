@@ -56,9 +56,9 @@ export function TextReveal({
       <span className="sr-only">{text}</span>
       <span aria-hidden="true">
         {words.map((word, index) => (
-          <span key={`${word}-${index}`} className="word-mask mr-[0.2em]">
-            <span data-text-word>{word}</span>
-          </span>
+          <span key={`${word}-${index}`} className="word-mask">
+  <span data-text-word>{word}</span>
+</span>
         ))}
       </span>
     </Tag>
