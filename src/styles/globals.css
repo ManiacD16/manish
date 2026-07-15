@@ -538,3 +538,45 @@ select:-webkit-autofill {
     0 0 0 1000px rgb(var(--surface)) inset;
   transition: background-color 9999s ease-out;
 }
+
+.contact-select {
+  color: rgb(var(--foreground));
+  background-color: transparent;
+  color-scheme: light;
+}
+
+html.dark .contact-select {
+  color-scheme: dark;
+}
+
+.contact-select option {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-editorial);
+  font-size: 1rem;
+}
+
+.contact-select option:disabled {
+  color: rgb(var(--muted));
+}
+
+.contact-select option:checked {
+  background-color: rgb(var(--accent));
+  color: rgb(var(--paper));
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill {
+  -webkit-text-fill-color: rgb(var(--foreground));
+  caret-color: rgb(var(--foreground));
+  -webkit-box-shadow:
+    0 0 0 1000px rgb(var(--surface)) inset;
+  box-shadow:
+    0 0 0 1000px rgb(var(--surface)) inset;
+  transition: background-color 9999s ease-out;
+}
